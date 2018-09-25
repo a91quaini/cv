@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Alberto}{Quaini}{ %\urlstyle{same}%\url{https://github.com/quainialberto} \\
+\href{mailto:alberto.quaini@unige.ch}{alberto.quaini@unige.ch} | +41 (0)22.379.9843}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Universit\'e de Gen\`eve}
+\descript{PhD in Statistics}
+GSEM \& GFRI \\
+Supervisor: \href{http://www.people.usi.ch/trojanif/}{Prof Fabio Trojani} \\
+\location{2015 -- 2020 | Gen\`eve, CH}
+\sectionsep
+
+\descript{MSc in Statistics}
+GSEM | Best GPA Award \\
+\location{2013 -- 2015 | Gen\`eve, CH}
+\sectionsep
+
+\subsection{Universit\'a della Svizzera Italiana}
+\descript{BA in Economics}
+\location{2010 -- 2013 | Lugano, CH}
+Summa Cum Laude
+\sectionsep
+
+\subsection{Educational Experience}
+\textbullet{} BFI (\href{https://bfi.uchicago.edu/osm18}{bfi.uchicago.edu}) 2018 \\
+OSM Lab Booth Camp \\
+\textbullet{} CADMOS (\href{http://cadmos.org/index.php/fr/}{cadmos.org}) 2017 \\
+High Performance Computing \\
+\textbullet{} ZICE (\href{http://zccfe.uzh.ch/en/}{zccfe.uzh.ch}) 2017 \\
+Computational Economics 
+\sectionsep
+
+\subsection{PhD Coursework}
+Advanced Statistical Inference (UNIGE) |
+Econometrics (USI) |
+Time Series (USI) |
+Predictive Modeling and Forecasting (Studienzentrum Gerzensee) |
+Mathematics for Financial Economics (EPFL) |
+Time Series Methods in Financial Econometrics (USTGallen) |
+Parallel Computing (UNIGE) |
+Resampling Methods and Forecasting (USTGallen)
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/quainialberto}{\custombold{quainialberto}} \\
+LinkedIn:// \href{https://www.linkedin.com/in/alberto-quaini-18b709a9/}{\custombold{albertoquaini}} \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+R \textbullet{} Rcpp \textbullet{} Shiny \textbullet{} Matlab \\
+Python \textbullet{} Mathematica \textbullet{} \LaTeX\ \\ 
+\sectionsep
+
+\subsection{Languages}
+Italiano \textbullet{} English (IELTS 8/9)\textbullet{} Français
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{UNIGE GSEM \& GFRI}
+\descript{| Research and Teaching Assistant }
+\location{ 2015 – 2020 | Gen\`eve, CH}
+\vspace{\topsep} 
+Assisted \href{http://www.people.usi.ch/trojanif/}{Prof Fabio Trojani} for the elective course "Discrete Time Asset Pricing"
+in MSc Statistics, MSc Economics and MSc Wealth Management.
+Organized the GFRI Brown Bag seminar.
+\sectionsep
+
+\runsubsection{Alphacruncher \& GFRI}
+\descript{| App Developer }
+\location{March 2017 -- April 2017 | Gen\`eve, CH}
+Developed several educational apps for \href{http://alphacruncher.com/}{Alphacruncher} 
+using R Shiny for a course in "Data Analysis and Advanced Modeling in Finance" taught by 
+\href{http://www.people.usi.ch/trojanif/}{Prof Fabio Trojani}
+and \href{http://www.scaillet.ch/Home_Page_of_Olivier_Scaillet.htm}{Prof Olivier Scaillet}
+at Tsinghua University in China, Executive PhD in Finance.
+\sectionsep
+
+\runsubsection{Lion Italia s.r.l.}
+\descript{| Consultant on call}
+\location{2010 -- 2014 | Montano Lucino, IT}
+Worked in Logistic, Supply Chain Management and Quality Control under the supervision
+of \href{mailto:gio.quaini@gmail.com}{Giovanni Quaini} (Founder \& CEO).
+\sectionsep
+
+\runsubsection{Universit\'a della Svizzera Italiana}
+\descript{| Student Assistant}
+\location{2011 -- 2013 | Lugano, CH}
+Assisted \href{https://www.linkedin.com/in/roberto-ferretti-975697a/}{Prof Roberto Ferretti} 
+for the BA courses "Algebra Lineare" and "Analisi Matematica".
+\sectionsep
+
+\runsubsection{Ambrosetti Asset Management SIM s.p.a.}
+\descript{| Intern}
+\location{2011 -- 2013 | Tavernola, IT}
+Worked in Portfolio and Economic outlook analysis and
+developed algoritmic investment strategy tools under the supervision of
+\href{https://www.linkedin.com/in/fabio-gnecco-172b156/}{Dr Fabio Gnecco} (CEO).
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+My research interests encompass Statistics, Optimization, Stochastic Discount Factor approach and Financial Econometrics. 
+\sectionsep
+
+\runsubsection{Research Articles}\\ \small
+-- "Robust Approaches to the LASSO", Master Thesis with Prof Sylvain Sardy, 2015 \\
+-- "Smart SDFs", PhD thesis with Prof Fabio Trojani, 2020 \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rll}
+2015	     & GSEM & Best MSc Statistics GPA Award (1000.-)\\
+2018         & UChicago & Scholarship (\$4200) + travel and accomodation expenses for OSMLab
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies} 
+% 
+% \begin{tabular}{rll}
+% 2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+% 2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+% 2012   &  National  & Golden Key International Honor Society\\
+% 2012   &  National   & National Society of Collegiate Scholars\\
+% \end{tabular}
+% \sectionsep
+
+\end{minipage} 
+\end{document}
